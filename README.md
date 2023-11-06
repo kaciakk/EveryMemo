@@ -1,4 +1,8 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# EverKaciakMemo
+
+![ezgif com-video-to-gif (2)](https://github.com/kaciakk/notatki10/assets/95936444/4c67bb6a-3d68-4ea1-a121-2650eeeb43d3)
+
+EverKaciakMemo is a simple website for taking notes. This project includes basic components, such as navigation and a footer, which you can customize to suit your needs.
 
 ## Getting Started
 
