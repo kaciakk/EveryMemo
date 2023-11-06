@@ -1,0 +1,84 @@
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.navbar-item {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_m {
+  @apply flex justify-center items-center;
+}
+
+.footer_copyright {
+  @apply max-sm:flex-col w-full text-sm font-normal;
+}
+
+.footer_column {
+  @apply flex-1 flex flex-col gap-3 text-sm min-w-max;
+}
+
+
+.modal {
+  @apply fixed z-10 left-0 right-0 top-0 bottom-0 mx-auto bg-black/80;
+}
+
+.modal_wrapper {
+  @apply
+    flex items-center flex-col absolute
+    h-80
+    w-80
+    top-1/2 
+    left-1/2 
+    transform -translate-x-1/2 -translate-y-1/2 
+    bg-white rounded-xl lg:px-40 px-8 pt-14 pb-8 
+    overflow-hidden;
+}
+
+.textarea-container textarea {
+  resize: none;
+}
+
+
+@media (max-width: 640px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-item {
+    flex: none;
+    margin-bottom: 10px;
+  }
+
+  .footer_column {
+    min-width: auto;
+  }
+
+  .modal_wrapper {
+    width: 90%;
+    max-width: 300px;
+    padding: 10px;
+  }
+}
